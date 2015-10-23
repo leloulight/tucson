@@ -54,7 +54,7 @@ class PhotoController extends Controller
         $photo->file_name = $name;
         $photo->save();
 
-        return redirect()->route('photo.index');
+        return redirect()->route('feed');
     }
 
     /**

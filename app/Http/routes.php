@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('feed');
-});
+Route::get('/', [                           //Feed
+	'as' => 'feed',
+	'uses' => 'FeedController@index']);
 
 /**
  *	Users
